@@ -1,0 +1,134 @@
+/* === Styl 1: klasyczny, czysty, lewa kolumna === */
+:root {
+  --dark: rgb(27, 60, 83);
+  --mid: rgb(35, 76, 106);
+  --light: rgb(69, 104, 130);
+  --accent: rgb(210, 193, 182);
+  --font: 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  color: var(--dark);
+  background: var(--accent);
+  line-height: 1.6;
+}
+
+/* header */
+header {
+  background: var(--dark);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav a:hover {
+  color: white;
+}
+
+/* hero banner */
+.hero {
+  background: url('image/pexels-joaquin-delgado-497073239-20710348.jpg') center/cover no-repeat;
+  height: 350px;
+}
+
+/* sections */
+main {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+h2 {
+  border-left: 5px solid var(--mid);
+  padding-left: 10px;
+  color: var(--mid);
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.service img {
+  width: 45%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.service div {
+  padding: 1rem;
+}
+
+/* table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 0.8rem;
+  border-bottom: 1px solid var(--accent);
+  text-align: left;
+}
+
+th {
+  background: var(--mid);
+  color: white;
+}
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  max-width: 400px;
+}
+
+input, textarea, button {
+  padding: 0.6rem;
+  border: 1px solid var(--light);
+  border-radius: 5px;
+}
+
+footer {
+  background: var(--dark);
+  color: var(--accent);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .service {
+    flex-direction: column;
+  }
+  .service img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f4f7;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 40px;
+}
+
+.container {
+  width: 360px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #3d8af7;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2c74d4;
+}
+
+#current, #forecast {
+  margin-top: 20px;
+}
+
+/* Карточка прогноза */
+.forecast-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.forecast-left h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.forecast-date {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.forecast-temp {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.forecast-feels {
+  font-size: 13px;
+  color: #666;
+}
+
+.forecast-middle img {
+  width: 70px;
+  height: 70px;
+}
+
+.forecast-desc {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 14px;
+}
+
+.forecast-right {
+  text-align: right;
+  font-size: 14px;
+}
+
+
